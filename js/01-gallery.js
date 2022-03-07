@@ -109,9 +109,7 @@ event.preventDefault();
 
   const instance = basicLightbox
     .create(
-      `
-		<img width="1280" src = ${event.target.dataset.source}>
-	`
+      `<img width="1280" src = ${event.target.dataset.source}>`
     )
   instance.show();
 
