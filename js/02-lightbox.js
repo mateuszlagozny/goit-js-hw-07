@@ -6,15 +6,15 @@ console.log(galleryItems);
 
 const galleryBox = document.querySelector("ul.gallery");
 
-for (const el of galleryItems) {
+for (const element of galleryItems) {
   const galleryItem = document.createElement("a");
   galleryItem.classList.add("gallery__item");
-  galleryItem.href = el.original;
+  galleryItem.href = element.original;
 
   const galleryImage = document.createElement("img");
   galleryImage.classList.add("gallery__image");
-  galleryImage.src = el.preview;
-  galleryImage.alt = el.description;
+  galleryImage.src = element.preview;
+  galleryImage.alt = element.description;
 
   galleryBox.append(galleryItem);
   galleryItem.append(galleryImage);
